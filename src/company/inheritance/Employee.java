@@ -1,26 +1,29 @@
 package company.inheritance;
 
+import java.util.Date;
+
 public class Employee {
 	
-	protected int employeeID;
 	protected String employeeName;
 	protected double salary;
+	protected Date birthday;
 	
 	//오버라이딩 == 상위 클래스의 메소드를 하위 클래스에서 재정의 하는것
-	
-	
+		
 	public Employee(){}
 	
-	public Employee(String employeeName){
+	public Employee(String employeeName, double salary, Date birthday){
 		this.employeeName = employeeName;
+		this.salary = salary;
+		this.birthday = birthday;
 	}
 	
-	public int getEmployeeID() {
-		return employeeID;
+	public Date getBirthday() {
+		return birthday;
 	}
 
-	public void setEmployeeID(int employeeID) {
-		this.employeeID = employeeID;
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 	public String getEmployeeName() {
@@ -40,7 +43,11 @@ public class Employee {
 	}
 
 	public String getDetail(){
-		return employeeID + ", " + employeeName + ", " + salary;
+		return employeeName + ", " + salary + ", " + birthday;
+	}
+	
+	public double reportSalary(){
+		return salary;
 	}
 
 }

@@ -12,7 +12,7 @@ public class SingletonTest {
 		System.out.println(s1 == s2);
 		
 		Calendar cal1 = Calendar.getInstance();
-		System.out.println("");
+		System.out.println(cal1.getTimeZone());
 	}
 
 }
