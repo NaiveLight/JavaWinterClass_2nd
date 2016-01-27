@@ -25,7 +25,7 @@ public class StaticTest {
 	
 	public static int getSnum(){
 		
-		int i = 10;
+		//int i = 10;
 		//num++;
 		return snum;
 	}

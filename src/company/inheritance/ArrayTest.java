@@ -1,9 +1,8 @@
 package company.inheritance;
 
-import java.util.ArrayList;
-
 public class ArrayTest {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = new int[10];
