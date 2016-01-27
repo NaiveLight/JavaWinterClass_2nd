@@ -6,6 +6,7 @@ public class EmployeeReport {
 
 	//배열 : 동일한 Datatype 자료 , 순서 논리적,물리적 순서 동일
 	
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		
 		Employee[] employeeList = new Employee[5];
@@ -35,4 +36,13 @@ public class EmployeeReport {
 		//diamond problem 구글링 해보기
 	}
 
+	/*instanceof 연산자
+	 * 
+	 *  Employee me = new Manager("Test");
+	 *  
+	 *  if (me instanceof Manager){
+	 *  	Manager m = (Manager) me;
+	 *  }
+	 *  
+	 */
 }
